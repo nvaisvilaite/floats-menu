@@ -1,0 +1,151 @@
+* {
+  box-sizing: border-box;
+}
+html, body {
+  margin: 0;
+  padding: 0;
+  background: #C8C6C6;
+  font-family: 'News Cycle', sans-serif;
+  font-size: 16px;
+  padding: 20px;
+}
+
+img {
+  width:100%;
+  max-width:100%;
+  height:auto;
+}
+
+.clearfix::after, .clearfix::before {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+[class*="col-"] {
+  padding-bottom:30px;
+  padding-left:15px;
+  padding-right:15px;
+}
+
+.col-6 {
+  width:50%;
+  float:left;
+
+}
+
+.col-12 {
+  width:100%;
+  float:none;
+}
+
+.col-2-4 {
+  width:20%;
+  float:left;
+}
+
+body.space {
+  padding-top:20px;
+}
+
+.card {
+  background-color:white;
+  border-top:5px solid #0974b3;
+  padding:25px 15px 35px 15px;
+}
+
+.card.extra {
+  border-color:#d6d6d6;
+
+}
+
+.card.extra .btn:hover {
+  opacity:0.9;
+}
+
+.card.extra:hover {
+  border-color:#0974b3;
+    transform:translateY(-20px);
+}
+
+.card .btn a {
+  width:100%;
+  background-color:#0974b3;
+  color:white;
+  padding:10px 20px;
+  text-align:center;
+  display:block;
+  text-decoration:none;
+  border-radius:25px 0px 20px 0px;
+}
+
+.card .top {
+  margin-bottom:20px;
+}
+
+.card .text-block.float img {
+   float:left;
+   max-width:60%;
+   margin-right:15px;
+   margin-bottom:15px;
+}
+
+.card .text-block p {
+  margin-top:0px;
+  margin-bottom:12px;
+}
+
+.card .title {
+  font-weight:bold;
+  font-size:30px;
+  display:block;
+  color:#0974b3;
+}
+
+.card .years {
+  display:block;
+  font-weight:400;
+}
+
+.card .left {
+  float:left;
+  width:150px;
+}
+
+.card .right {
+  float:right;
+  width:calc(100% - 150px);
+  padding-left:20px;
+}
+
+
+@media (max-width:900px) {
+  .card .left, .card .right {
+    float:none;
+    width:auto;
+    padding:0;
+  }
+
+  .card .left {
+    margin-bottom:20px;
+    text-align:center;
+  }
+
+  .card-right {
+    text-align:left;
+  }
+
+  .card img {
+    max-height:250px;
+    width:auto;
+  }
+
+  .col-small-12 {
+      float:none;
+      width:auto;
+  }
+  }
+
+  .italic {
+  font-style: italic;
+  }
